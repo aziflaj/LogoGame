@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "name": "Level 1: Cars",
+    "content": {
+      "amount": 2,
+      "logos": [
+        {
+          "id": "item1",
+          "name": "Item1",
+          "img": "img/ZyhxKsXQoyJXFrWuZG0w_lvl1.jpg"
+        },
+        {
+          "id": "item1",
+          "name": "Item1",
+          "img": "img/ZyhxKsXQoyJXFrWuZG0w_lvl1.jpg"
+        }
+      ]
+    }
+  },
+
+  {
+    "id": 2,
+    "name": "Level 2: Fashion",
+    "content": {
+      "amount": 2,
+      "logos": [
+        {
+          "id": "item1",
+          "name": "Item1",
+          "img": "img/sejAPCkTfrCwgT3leA8Q_lvl2.jpg"
+        },
+        {
+          "id": "item1",
+          "name": "Item1",
+          "img": "img/sejAPCkTfrCwgT3leA8Q_lvl2.jpg"
+        }
+      ]
+    }
+  },
+
+  {
+    "id": 3,
+    "name": "Level 3: Things",
+    "content": {
+      "amount": 2,
+      "logos": [
+        {
+          "id": "item1",
+          "name": "Item1",
+          "img": "img/ZyhxKsXQoyJXFrWuZG0w_lvl1.jpg"
+        },
+        {
+          "id": "item1",
+          "name": "Item1",
+          "img": "img/ZyhxKsXQoyJXFrWuZG0w_lvl1.jpg"
+        }
+      ]
+    }
+  }
+]
