@@ -1,11 +1,14 @@
-angular.module('app')
-  .controller('LevelsController', LevelsController);
+(function() {
+  angular
+    .module('app')
+    .controller('LevelsController', LevelsController);
 
-LevelsController.$inject('$http');
+  LevelsController.$inject('$http');
 
-function LevelsController($http) {
-  var self = this;
-  $http.get('/data/levels.json').success(function(data) {
-    self.levels = data;
-  });
-};
+  function LevelsController($http) {
+    var self = this;
+    $http.get('/data/levels.json').success(function(data) {
+      self.levels = data;
+    });
+  };
+})();
