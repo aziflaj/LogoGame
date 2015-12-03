@@ -2,18 +2,59 @@
   {
     "id": 1,
     "name": "Level 1: Cars",
+    "image": "img/lvl1/level.jpg",
     "content": {
-      "amount": 2,
+      "amount": 10,
       "logos": [
         {
-          "id": "item1",
-          "name": "Item1",
-          "img": "img/ZyhxKsXQoyJXFrWuZG0w_lvl1.jpg"
+          "id": "bentley",
+          "name": "Bentley",
+          "img": "img/lvl1/bentley.jpg"
         },
         {
-          "id": "item1",
-          "name": "Item1",
-          "img": "img/ZyhxKsXQoyJXFrWuZG0w_lvl1.jpg"
+          "id": "benz",
+          "name": "Benz",
+          "img": "img/lvl1/benz.jpg"
+        },
+        {
+          "id": "citroen",
+          "name": "Citroen",
+          "img": "img/lvl1/citroen.jpg"
+        },
+        {
+          "id": "dodge",
+          "name": "Dodge",
+          "img": "img/lvl1/dodge.jpg"
+        },
+        {
+          "id": "ferrari",
+          "name": "Ferrari",
+          "img": "img/lvl1/ferrari.jpg"
+        },
+        {
+          "id": "ford",
+          "name": "Ford",
+          "img": "img/lvl1/ford.jpg"
+        },
+        {
+          "id": "honda",
+          "name": "Honda",
+          "img": "img/lvl1/honda.jpg"
+        },
+        {
+          "id": "mazda",
+          "name": "Mazda",
+          "img": "img/lvl1/mazda.jpg"
+        },
+        {
+          "id": "mitsubishi",
+          "name": "Mitsubishi",
+          "img": "img/lvl1/mitsubishi.jpg"
+        },
+        {
+          "id": "renault",
+          "name": "Renault",
+          "img": "img/lvl1/renault.jpg"
         }
       ]
     }
@@ -22,6 +63,7 @@
   {
     "id": 2,
     "name": "Level 2: Fashion",
+    "image": "img/sejAPCkTfrCwgT3leA8Q_lvl2.jpg",
     "content": {
       "amount": 2,
       "logos": [
@@ -42,6 +84,7 @@
   {
     "id": 3,
     "name": "Level 3: Things",
+    "image": "img/sejAPCkTfrCwgT3leA8Q_lvl2.jpg",
     "content": {
       "amount": 2,
       "logos": [

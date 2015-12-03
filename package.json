@@ -1,7 +1,7 @@
 {
-  "name": "kreator",
+  "name": "LogoGame",
   "version": "1.1.1",
-  "description": "kreator: An Ionic project",
+  "description": "LogoGame, a game for brand fans",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",
