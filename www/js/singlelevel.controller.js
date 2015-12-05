@@ -14,10 +14,9 @@
       for (item of data) {
         if (item.id == levelId) {
           self.level = item;
+          self.logos = self.level.content.logos;
         }
       }
-
-      console.log(self.level);
     });
   };
 })();
