@@ -3,13 +3,13 @@
     .module('app')
     .controller('SingleLevelController', SingleLevelController);
 
-  SingleLevelController.$inject = ['$http', '$stateParams', 'LevelsService'];
+  SingleLevelController.$inject = ['$http', '$stateParams', 'levelsService'];
 
-  function SingleLevelController($http, $stateParams, LevelsService) {
+  function SingleLevelController($http, $stateParams, levelsService) {
     var self = this;
 
     var levelId = $stateParams.levelId;
-    LevelsService.all().success(function(data) {
+    levelsService.all().success(function(data) {
 
       for (item of data) {
         if (item.id == levelId) {

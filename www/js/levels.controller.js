@@ -3,12 +3,12 @@
     .module('app')
     .controller('LevelsController', LevelsController);
 
-  LevelsController.$inject = ['$http', 'LevelsService'];
+  LevelsController.$inject = ['$http', 'levelsService'];
 
-  function LevelsController($http, LevelsService) {
+  function LevelsController($http, levelsService) {
     var self = this;
 
-    LevelsService.all().success(function(data) {
+    levelsService.all().success(function(data) {
       self.levels = data;
     });
   };

@@ -1,11 +1,11 @@
 (function() {
   angular
     .module('app')
-    .service('LevelsService', LevelsService);
+    .service('levelsService', levelsService);
 
-  LevelsService.$inject = ['$http'];
+  levelsService.$inject = ['$http'];
 
-  function LevelsService($http) {
+  function levelsService($http) {
     var o = {
       all: getAllLevels
     };
