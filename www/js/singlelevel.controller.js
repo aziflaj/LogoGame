@@ -6,18 +6,26 @@
   SingleLevelController.$inject = ['$http', '$stateParams', 'levelsService'];
 
   function SingleLevelController($http, $stateParams, levelsService) {
-    var self = this;
+    var vm = this;
+    vm.level = {};
+    vm.logos = [];
 
-    var levelId = $stateParams.levelId;
-    levelsService.all().success(function(data) {
+    activate();
 
-      for (item of data) {
-        if (item.id == levelId) {
-          self.level = item;
-          self.logos = self.level.content.logos;
-          break;
-        }
-      }
-    });
+    // IMPLEMENTATION
+    function activate() {
+      return getLevel().then(function() {
+        console.log('Activated Level View');
+      });
+    }
+
+    function getLevel() {
+      var levelId = $stateParams.levelId;
+      return levelsService.getLevelById(levelId)
+        .then(function(response) {
+          vm.level = response;
+          vm.logos = response.content.logos;
+        });
+    }
   };
 })();

@@ -13,21 +13,21 @@
     var levelId = $stateParams.levelId;
     var logoId = $stateParams.logoId;
 
-    levelsService.all().success(function(data) {
-      dance:
-      for (item of data) {
-        if (item.id == levelId) {
-          self.levelName = item.name;
-          for (logo of item.content.logos) {
-            if (logo.id == logoId) {
-              self.logo = logo;
-              console.log(logo);
-              break dance;
-            }
-          }
-        }
-      }
-    });
+    // levelsService.all().success(function(data) {
+    //   dance:
+    //   for (item of data) {
+    //     if (item.id == levelId) {
+    //       self.levelName = item.name;
+    //       for (logo of item.content.logos) {
+    //         if (logo.id == logoId) {
+    //           self.logo = logo;
+    //           console.log(logo);
+    //           break dance;
+    //         }
+    //       }
+    //     }
+    //   }
+    // });
 
     function check(inputName) {
       if (angular.isDefined(inputName) && inputName.toUpperCase() === self.logo.name.toUpperCase()) {
