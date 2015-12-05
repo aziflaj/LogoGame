@@ -20,7 +20,6 @@
     }
 
     function getAllLevels() {
-      console.log('Activating');
       return levelsService.getAllLevels()
         .then(function(response) {
           vm.levels = response.data;
