@@ -1,9 +1,11 @@
-<ion-view title="Level">
+<ion-view title="{{vm.level.name}}">
     <ion-content class="has-header" padding="'true'">
 
       <div class="row" ng-repeat="item in vm.logos track by $index" ng-if="$index % 2 == 0">
         <div class="col col-50" ng-repeat="i in [$index, $index+1]">
-          <img ng-src="{{vm.logos[i].img}}" alt="" />
+          <a ng-href="#/levels/{{vm.level.id}}/logo/{{vm.logos[i].id}}">
+            <img ng-src="{{vm.logos[i].img}}"/>
+          </a>
         </div>
       </div>
 

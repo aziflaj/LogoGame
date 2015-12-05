@@ -15,6 +15,7 @@
         if (item.id == levelId) {
           self.level = item;
           self.logos = self.level.content.logos;
+          break;
         }
       }
     });

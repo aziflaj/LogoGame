@@ -25,6 +25,12 @@ angular.module('app.routes', [])
       templateUrl: 'templates/level.html',
       controller: 'SingleLevelController',
       controllerAs: 'vm'
+    })
+    .state('logo', {
+      url: '/levels/:levelId/logo/:logoId',
+      templateUrl: 'templates/logo.html',
+      controller: 'LogoController',
+      controllerAs: 'vm'
     });
 
   // if none of the above states are matched, use this as the fallback
