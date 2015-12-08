@@ -3,13 +3,17 @@
 
       <img ng-src="{{vm.logo.img}}" />
 
-      <div class="item item-input-inset">
+      <div class="item item-input-inset" ng-hide="vm.found">
         <label class="item-input-wrapper">
           <input type="text" ng-model="inputName">
         </label>
         <button class="button button-royal" ng-click="vm.check(inputName)">
           Check
         </button>
+      </div>
+
+      <div ng-show="vm.found">
+        <h2>{{vm.logo.name}}</h2>
       </div>
 
     </ion-content>

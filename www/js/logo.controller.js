@@ -3,11 +3,12 @@
     .module('app')
     .controller('LogoController', LogoController);
 
-  LogoController.$inject = ['$stateParams', 'levelsService'];
+  LogoController.$inject = ['$ionicPopup', '$stateParams', 'levelsService'];
 
-  function LogoController($stateParams, levelsService) {
+  function LogoController($ionicPopup, $stateParams, levelsService) {
     var vm = this;
     vm.check = check;
+    vm.found = false;
     vm.level = {};
     vm.logo = {};
 
@@ -17,15 +18,22 @@
 
     function activate() {
       return getLogo().then(function() {
+        vm.found = window.localStorage[vm.level.id + vm.logo.name];
+        console.log('found: ' + vm.found);
         console.log('Activated Logo View');
       });
     }
 
     function check(inputName) {
-      if (angular.isDefined(inputName) && inputName.toUpperCase() === self.logo.name.toUpperCase()) {
-        window.localStorage[$stateParams.levelId + self.logo.name] = true; //store as found
+      if (angular.isDefined(inputName) && inputName.toUpperCase() === vm.logo.name.toUpperCase()) {
+        window.localStorage[$stateParams.levelId + vm.logo.name] = true; //store as found
         console.log('Correct!');
-        // history.back(-1);
+        $ionicPopup.alert({
+          title: vm.level.name,
+          template: 'You found ' + vm.logo.name
+        }).then(function(res) {
+          history.back(-1);
+        });
       } else {
         //TODO: should tilt the icon
       }
